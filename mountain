@@ -1,0 +1,4 @@
+<div style="text-align: center; background-color: #333; color: #fff; padding: 10px; width: 200px; border-radius: 8px; font-family: Helvetica, Arial, sans-serif;">
+    <div style="font-size: 14px; margin-bottom: 5px;">Mountain Time (MST/MDT)</div>
+    <iframe src="https://www.clocklink.com/html5embed.php?clock=044&timezone=MST&color=white&size=100&Title=&Message=&Target=&From=&Movie=&Color=white" frameborder="0" width="200" height="60"></iframe>
+</div>
