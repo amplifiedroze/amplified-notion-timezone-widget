@@ -1,0 +1,13 @@
+<div style="text-align: center; background-color: #333; color: #fff; padding: 15px; width: 220px; border-radius: 8px; font-family: Helvetica, Arial, sans-serif;">
+    <div style="font-size: 16px; margin-bottom: 8px;">Central Time (CST/CDT)</div>
+    <div id="central-time" style="font-size: 24px;"></div>
+</div>
+<script>
+function updateCentralTime() {
+    var options = { timeZone: 'America/Chicago', hour12: true, hour: 'numeric', minute: 'numeric' };
+    var formatter = new Intl.DateTimeFormat([], options);
+    document.getElementById('central-time').innerHTML = formatter.format(new Date());
+}
+setInterval(updateCentralTime, 1000);
+updateCentralTime();
+</script>
