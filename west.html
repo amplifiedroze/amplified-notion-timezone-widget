@@ -1,0 +1,13 @@
+<div style="text-align: center; background-color: #333; color: #fff; padding: 15px; width: 220px; border-radius: 8px; font-family: Helvetica, Arial, sans-serif;">
+    <div style="font-size: 16px; margin-bottom: 8px;">West Coast (PST/PDT)</div>
+    <div id="west-coast-time" style="font-size: 24px;"></div>
+</div>
+<script>
+function updateWestCoastTime() {
+    var options = { timeZone: 'America/Los_Angeles', hour12: true, hour: 'numeric', minute: 'numeric' };
+    var formatter = new Intl.DateTimeFormat([], options);
+    document.getElementById('west-coast-time').innerHTML = formatter.format(new Date());
+}
+setInterval(updateWestCoastTime, 1000);
+updateWestCoastTime();
+</script>
