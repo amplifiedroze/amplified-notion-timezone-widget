@@ -1,0 +1,13 @@
+<div style="text-align: center; background-color: #333; color: #fff; padding: 15px; width: 220px; border-radius: 8px; font-family: Helvetica, Arial, sans-serif;">
+    <div style="font-size: 16px; margin-bottom: 8px;">China Time (CST)</div>
+    <div id="china-time" style="font-size: 24px;"></div>
+</div>
+<script>
+function updateChinaTime() {
+    var options = { timeZone: 'Asia/Shanghai', hour12: true, hour: 'numeric', minute: 'numeric' };
+    var formatter = new Intl.DateTimeFormat([], options);
+    document.getElementById('china-time').innerHTML = formatter.format(new Date());
+}
+setInterval(updateChinaTime, 1000);
+updateChinaTime();
+</script>
